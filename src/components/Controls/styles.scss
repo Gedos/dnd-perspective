@@ -1,0 +1,40 @@
+.container {
+
+    transform: translateY(90px);
+    transition: transform 0.2s;
+    &.open {
+        transform: translateY(0);
+    }
+}
+
+.notch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background: chocolate;
+    color: white;
+    width: 50px;
+    height: 30px;
+}
+
+.controls {
+    width: 100px;
+    > * {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background: chocolate;
+    border-radius: 5px;
+    color: white;
+}

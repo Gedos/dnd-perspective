@@ -1,0 +1,30 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    border-left: 1px solid grey;
+    border-top: 1px solid grey;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid grey;
+}
+
+.cell {
+    position: relative;
+    width: 64px;
+    height: 64px;
+    background: white;
+    color: black;
+    border-bottom: 1px solid grey;  
+    user-select: none;
+
+    &.fog {
+        background: black;
+    }
+
+    > * {
+        position: absolute;
+    }
+}

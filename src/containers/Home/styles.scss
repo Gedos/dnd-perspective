@@ -1,0 +1,26 @@
+.maps {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    border-radius: 10px;
+    border: 1px solid $grey;
+    overflow: hidden;
+
+    .header {
+        font-weight: bold;
+        padding: 5px;
+    }
+}
+
+.map {
+    border-top: 1px solid $grey;
+    padding: 5px;
+
+    &.selected {
+        background: $highlight;
+    }
+
+    &:first-of-type {
+        border: none;
+    }
+}
